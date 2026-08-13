@@ -1,34 +1,30 @@
 # Certified Navier–Stokes Fourier Extremizers
 
 **Avighna Wuthoo**  
-Computer-assisted finite-dimensional variational results for periodic three-dimensional Navier–Stokes flow (2026).
+Computer-assisted finite-dimensional variational results for a periodic three-dimensional Navier–Stokes Fourier class (2026).
 
 ## Start here
 
-1. Read the **[research paper](Wuthoo_2026_Certified_Navier_Stokes_Fourier_Extremizers.pdf)** for the statements, proofs, methods, and scope.
-2. Download the **[reproducibility archive](Wuthoo_2026_Navier_Stokes_Reproducibility_Archive.zip)** to inspect the source code, exact/interval certificate inputs, proof logs, tests, and numerical data.
-3. Use the **[release manifest](Wuthoo_2026_Release_Manifest.json)** and **[verification summary](Wuthoo_2026_Verification_Summary.json)** to check the archived release and reported verification status.
+1. Read the **[paper](Wuthoo_2026_Certified_Navier_Stokes_Fourier_Extremizers.pdf)**.
+2. Read **[the reproduction and audit guide](REPRODUCTION.md)**.
+3. Use **[the reviewer guide](manuscript/REVIEWER_GUIDE.md)** to map every theorem to source code and its individual JSON certificate.
 
-## Included material
+## Individual materials
 
-| File | Purpose |
-| --- | --- |
-| Wuthoo_2026_Certified_Navier_Stokes_Fourier_Extremizers.pdf | Final research paper. |
-| Wuthoo_2026_Navier_Stokes_Reproducibility_Archive.zip | Complete reviewer/reproducibility package: manuscript sources, proof certificates, code, tests, raw data, notes, and dependency hashes. |
-| Wuthoo_2026_Release_Manifest.json | Release inventory and integrity information. |
-| Wuthoo_2026_Verification_Summary.json | Machine-readable summary of the verification record. |
+- `manuscript/` — LaTeX source, bibliography, reviewer guide, pre-submission audit, and figure files.
+- `proofs/` — individual interval, Krawczyk, Sturm, and algebra-audit JSON records, including the archived manifest and verification summary.
+- `src/extreme_flows/` — exact Fourier algebra, symmetry reductions, and interval-certificate implementation.
+- `scripts/` — certificate builders and the public verification entry point `verify_certificates.py`.
+- `pyproject.toml` — pinned project dependencies, including `python-flint==0.9.0` in the `proof` extra.
 
-## Scope of the results
+There are no ZIP archives, caches, raw exploratory-run files, unrelated Euler plans, or abandoned optimization logs in this public release.
 
-This project gives rigorous, computer-assisted **finite-dimensional** certificates for specified periodic 3D Navier–Stokes data and a fixed 64-real-dimensional low-Fourier-mode class. It also reports resolution-aware finite-horizon numerical depletion searches.
+## Scope
 
-It does **not** prove global regularity, finite-time singularity, or any resolution of the 3D Navier–Stokes Millennium Problem.
+The paper proves computer-assisted, **finite-dimensional** statements for a prescribed 16-pair / 64-real-coordinate Fourier model of instantaneous enstrophy production. Its strongest claims concern symmetry-reduced maxima and strict local maximality modulo translations in that fixed model.
 
-## What is certified
-
-- A strict one-sided initial enstrophy-production bottleneck for an explicit trajectory.
-- A strict local maximizer of the initial enstrophy-production rate in the stated low-mode class, modulo translations.
+It does **not** prove a full 64-dimensional global maximizer, global regularity, finite-time blow-up, turbulence theory, or any resolution of the 3D Navier–Stokes Millennium Problem.
 
 ## Citation
 
-Avighna Wuthoo, Certified Navier–Stokes Fourier Extremizers: Computer-Assisted Finite-Dimensional Variational Results, 2026.
+Avighna Wuthoo, *Certified Coexistence of Symmetry-Reduced Local Maximizers in a Periodic 3D Navier–Stokes Fourier Class*, 2026.
