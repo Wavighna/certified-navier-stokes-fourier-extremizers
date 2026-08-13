@@ -9,15 +9,13 @@ formation, or turbulence.
 
 With Python 3.12 and python-flint==0.9.0 installed, from the repository root:
 
-    .venv\Scripts\python.exe scripts\verify_paper_a.py
-    .venv\Scripts\python.exe scripts\build_paper_a_manifest.py
+    .venv\Scripts\python.exe scripts\verify_certificates.py
 
-The first command recomputes all theorem-level certificates at 256 and 512
-bits. On the reference machine it can take a few minutes while other numerical
-jobs are active. The second hashes every file in the declared release set.
-`scripts/audit_paper_a_clean_tree.py` additionally reruns this process from a
-fresh temporary copy of the release tree; it is a same-environment packaging
-check, not an independent audit.
+The command recomputes all theorem-level certificates at 256 and 512 bits and
+writes a fresh summary in `proofs/`.  The public repository intentionally
+contains only the source, certificates, figures, and reviewer documentation
+needed for this theorem paper; it excludes raw search logs, Python caches, and
+unrelated Euler material.
 
 ## Claim-to-evidence map
 
@@ -43,9 +41,9 @@ check, not an independent audit.
 | Two-term crossover asymptotics | reduced_static_parameterized_global.py | paper/main.tex following `prop:efficiency` | Exact inversion gives predictor $7056/(23-2\sqrt{138})^2\approx28834.30$; explanatory only, not the crossing proof. |
 | Branch-comparison figure | plot_static_branches.py | figures/symmetry_branch_rates.pdf | Numerical rendering of the exact reduced formulas; the displayed crossover is certified separately above. |
 
-artifacts/proofs/paper_a_verification.json is the top-level record joining
-these claims. paper_a_release_manifest.json binds the manuscript, scripts,
-sources, candidate inputs, and proof objects by SHA-256.
+`proofs/Wuthoo_2026_Verification_Summary.json` is the top-level record joining
+these claims. `proofs/Wuthoo_2026_Release_Manifest.json` is the archived
+integrity record from the original clean release.
 
 ## What to audit independently
 
