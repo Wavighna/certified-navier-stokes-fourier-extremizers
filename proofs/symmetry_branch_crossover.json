@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_unique_high_eta_symmetry_branch_crossover",
+  "dependency": {
+    "python_flint": "0.9.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "checker_source": {
+    "crossover_checker": {
+      "path": "scripts/certify_branch_crossover.py",
+      "size_bytes": 9476,
+      "sha256": "7ebbf51fc964a34cb6ab63543538116c7b670e15fbf25cfe4acdbdaa25eda906"
+    },
+    "six_branch_parameterization": {
+      "path": "src/extreme_flows/reduced_static_parameterized_global.py",
+      "size_bytes": 9642,
+      "sha256": "c536ac5a5bace5801ce2f3cf6380549196fb6c2985e5eaa32e02f6f7cd536366"
+    },
+    "competing_branch_formula": {
+      "path": "src/extreme_flows/reduced_competing.py",
+      "size_bytes": 8126,
+      "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+    }
+  },
+  "resultant": {
+    "variable": "mu",
+    "coefficients_descending": [
+      14283,
+      -616032,
+      -75884328,
+      -2607893632,
+      -48929993328,
+      -584799255552,
+      -4735225442048,
+      -26610597679104,
+      -103880151184128,
+      -275978473299968,
+      -474888508827648,
+      -475951787311104,
+      -210195161092096
+    ],
+    "descarte_positive_root_count": 1,
+    "existence": "P(0)<0 and leading coefficient is positive",
+    "eta_monotonicity": "eta'(mu)=(69mu^4+1952mu^3+20352mu^2+92160mu+150256)/(16(mu+8)^3)>0"
+  },
+  "arb_runs": [
+    {
+      "precision_bits": 256,
+      "verified": true,
+      "attempts": [
+        {
+          "radius_power_of_two": -80,
+          "strict_inclusion": true,
+          "contraction_upper": "[2.776665430201338780488629877492108045462970185583174214281686875362102991378e-21 +/- 2.45e-97]",
+          "contraction_strict": true
+        }
+      ],
+      "selected_attempt": {
+        "radius_power_of_two": -80,
+        "strict_inclusion": true,
+        "contraction_upper": "[2.776665430201338780488629877492108045462970185583174214281686875362102991378e-21 +/- 2.45e-97]",
+        "contraction_strict": true
+      },
+      "mu_box": "[109.663301272047565894122 +/- 2.71e-22]",
+      "b_box": "[13.8594246398162973425368 +/- 3.68e-23]",
+      "eta_box": "[27992.671985287174015090 +/- 6.26e-19]",
+      "common_rate_box": "[2007000.3943713134715301 +/- 2.09e-17]",
+      "jacobian_determinant": "[152582268451852341.54853593942058769253777676146538627136103173813905905320 +/- 8.05e-57]"
+    },
+    {
+      "precision_bits": 512,
+      "verified": true,
+      "attempts": [
+        {
+          "radius_power_of_two": -80,
+          "strict_inclusion": true,
+          "contraction_upper": "[2.77666542704589515960458265584519378433182526689034847181251201239935964908047660657176028230997172308373947092085687523178788135388459140350104571683603e-21 +/- 3.58e-174]",
+          "contraction_strict": true
+        }
+      ],
+      "selected_attempt": {
+        "radius_power_of_two": -80,
+        "strict_inclusion": true,
+        "contraction_upper": "[2.77666542704589515960458265584519378433182526689034847181251201239935964908047660657176028230997172308373947092085687523178788135388459140350104571683603e-21 +/- 3.58e-174]",
+        "contraction_strict": true
+      },
+      "mu_box": "[109.663301272047565894122 +/- 2.71e-22]",
+      "b_box": "[13.8594246398162973425368 +/- 3.68e-23]",
+      "eta_box": "[27992.671985287174015090 +/- 6.26e-19]",
+      "common_rate_box": "[2007000.3943713134715301 +/- 2.09e-17]",
+      "jacobian_determinant": "[152582268451852341.5485359394205876925377767614653862713610317381390590532006469353248337365185172199190784093241410418673584945254395353015950795157970 +/- 6.70e-134]"
+    }
+  ],
+  "ordering_anchors": {
+    "eta_10000": [
+      {
+        "eta": 10000,
+        "verified": true,
+        "six_branch_mu_box": "[63.834237363595152960714 +/- 3.06e-22]",
+        "competing_minus_six_rate_box": "[6277.39969171558426085 +/- 6.01e-18]",
+        "competing_branch_higher": true,
+        "six_amplitude_branch_higher": false
+      },
+      {
+        "eta": 10000,
+        "verified": true,
+        "six_branch_mu_box": "[63.834237363595152960714 +/- 3.06e-22]",
+        "competing_minus_six_rate_box": "[6277.39969171558426085 +/- 6.01e-18]",
+        "competing_branch_higher": true,
+        "six_amplitude_branch_higher": false
+      }
+    ],
+    "eta_40000": [
+      {
+        "eta": 40000,
+        "verified": true,
+        "six_branch_mu_box": "[131.922986205718420839479 +/- 5.85e-22]",
+        "competing_minus_six_rate_box": "[-12345.2530271153280684 +/- 5.73e-17]",
+        "competing_branch_higher": false,
+        "six_amplitude_branch_higher": true
+      },
+      {
+        "eta": 40000,
+        "verified": true,
+        "six_branch_mu_box": "[131.922986205718420839479 +/- 5.85e-22]",
+        "competing_minus_six_rate_box": "[-12345.2530271153280684 +/- 5.73e-17]",
+        "competing_branch_higher": false,
+        "six_amplitude_branch_higher": true
+      }
+    ]
+  },
+  "claims": {
+    "unique_positive_resultant_root": true,
+    "unique_crossing_on_the_high_eta_six_amplitude_branch": true,
+    "ordering_on_either_side": true,
+    "full_64d_global_ordering": false
+  },
+  "limitations": {
+    "The crossing compares the two symmetry-reduced KKT branches, not the global 64D problem.": true,
+    "Ordering is proved only along the two symmetry-reduced KKT branches.": true
+  }
+}

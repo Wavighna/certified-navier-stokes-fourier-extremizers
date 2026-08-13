@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "truth_label": "exact_six_branch_symmetry_representation_structure_not_hessian_stability_certificate",
+  "group": {
+    "order": 16,
+    "order_histogram": {
+      "1": 1,
+      "2": 7,
+      "4": 8
+    },
+    "center_order": 4,
+    "derived_subgroup_order": 2,
+    "abelianization_order": 8,
+    "conjugacy_class_sizes": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "linear_character_sectors": [
+    {
+      "generator_signs": [
+        -1,
+        -1,
+        -1
+      ],
+      "projector_rank": 5
+    },
+    {
+      "generator_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "projector_rank": 5
+    },
+    {
+      "generator_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "projector_rank": 5
+    },
+    {
+      "generator_signs": [
+        -1,
+        1,
+        1
+      ],
+      "projector_rank": 5
+    },
+    {
+      "generator_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "projector_rank": 6
+    },
+    {
+      "generator_signs": [
+        1,
+        -1,
+        1
+      ],
+      "projector_rank": 4
+    },
+    {
+      "generator_signs": [
+        1,
+        1,
+        -1
+      ],
+      "projector_rank": 4
+    },
+    {
+      "generator_signs": [
+        1,
+        1,
+        1
+      ],
+      "projector_rank": 6
+    }
+  ],
+  "linear_isotypic_total_dimension": 40,
+  "nonlinear_real_isotypic_component": {
+    "dimension": 24,
+    "central_order_four_characteristic_polynomial": "(lambda^2+1)^12",
+    "interpretation": "The residual is a 24-dimensional real component carrying a complex-type two-dimensional action with multiplicity 12. A commuting symmetric Hessian reduces to a multiplicity-space Hermitian block of size 12."
+  },
+  "next_required_step": "Derive the generalized Hessian on these exact isotypic sectors along the six-amplitude branch and apply Sturm/interval continuation.",
+  "checker_source": {
+    "path": "scripts/certify_six_symmetry_representation.py",
+    "size_bytes": 9115,
+    "sha256": "bb7bbff24fe2c8054fab969ff424eb02e72d7937c79083066d6234ea605f6d41"
+  },
+  "symmetry_source": {
+    "path": "src/extreme_flows/static_symmetry.py",
+    "size_bytes": 16437,
+    "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+  },
+  "claims": {
+    "exact_real_isotypic_structure_verified": true,
+    "uniform_six_branch_hessian_signs_proved": false
+  }
+}

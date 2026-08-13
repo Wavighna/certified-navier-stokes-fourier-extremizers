@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "truth_label": "numerical_static_kkt_candidate_only",
+  "source_sha256": "ddc063626b4e56f337281ba78b2b22eccc87418842ea7dc0d4ec5357dc4bf232",
+  "model": {
+    "dimension": 64,
+    "independent_mode_pairs": 16,
+    "mode_cutoff_squared": 4,
+    "viscosity": "1/100",
+    "target_enstrophy": 100.0,
+    "phase_indices": [
+      42,
+      14,
+      2
+    ],
+    "phase_waves": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "basis": [
+      {
+        "k": [
+          0,
+          0,
+          1
+        ],
+        "polarizations": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          0,
+          0,
+          2
+        ],
+        "polarizations": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            -4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          0,
+          1,
+          -1
+        ],
+        "polarizations": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          0,
+          1,
+          0
+        ],
+        "polarizations": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          0,
+          1,
+          1
+        ],
+        "polarizations": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          0,
+          2,
+          0
+        ],
+        "polarizations": [
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            -4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          -1,
+          -1
+        ],
+        "polarizations": [
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            -2,
+            -1,
+            -1
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          -1,
+          0
+        ],
+        "polarizations": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          -1,
+          1
+        ],
+        "polarizations": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            -2,
+            -1,
+            1
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          0,
+          -1
+        ],
+        "polarizations": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            -2,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          0,
+          0
+        ],
+        "polarizations": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          0,
+          1
+        ],
+        "polarizations": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            0,
+            -2,
+            0
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          1,
+          -1
+        ],
+        "polarizations": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -2,
+            1,
+            -1
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          1,
+          0
+        ],
+        "polarizations": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ]
+        ]
+      },
+      {
+        "k": [
+          1,
+          1,
+          1
+        ],
+        "polarizations": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "k": [
+          2,
+          0,
+          0
+        ],
+        "polarizations": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            -4,
+            0
+          ]
+        ]
+      }
+    ],
+    "nonzero_exact_cubic_tensor_entries_canonical": 512
+  },
+  "optimizer": {
+    "manifold_lbfgs_success": true,
+    "manifold_lbfgs_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "manifold_lbfgs_iterations": 142,
+    "root_success": true,
+    "root_message": "The solution converged."
+  },
+  "candidate": {
+    "controls": [
+      3.625910540438191,
+      -3.625910540438191,
+      2.0742221638512862e-17,
+      -3.0516225588899684e-16,
+      -5.22299918293687e-18,
+      2.763334302560426e-18,
+      5.825178394329532e-18,
+      -1.1560920687238226e-18,
+      8.619985234928823e-18,
+      3.919245361707203e-18,
+      7.761316442984581e-18,
+      1.8158659480641827e-17,
+      1.0143957017227532e-16,
+      1.3910676177979294e-17,
+      1.649338125465052e-17,
+      6.155659493070778e-17,
+      -5.958070331121918e-19,
+      1.9866742433876463e-17,
+      -4.055272714899946e-18,
+      -1.158751047692588e-17,
+      0.4706378692436997,
+      1.7187470013781896e-18,
+      -0.002593915053579758,
+      9.26001428737741e-19,
+      -0.28164364040369655,
+      -0.28164364040369655,
+      -0.6128388636216144,
+      -0.6128388636216143,
+      1.390606479278066e-17,
+      -1.7308588542241499,
+      4.5117649642465704e-17,
+      0.7954544296486543,
+      -0.28164364040369655,
+      0.28164364040369655,
+      -0.6128388636216144,
+      0.6128388636216143,
+      -9.609528470940774e-18,
+      1.1413296747716914e-17,
+      7.473954348158044e-18,
+      2.096011272480527e-17,
+      -5.771523220042982e-17,
+      -5.764421558017032e-17,
+      -3.568617922215386e-17,
+      3.2457618529959094e-17,
+      1.2502954425889812e-17,
+      1.5070258864983793e-17,
+      3.0243317509732352e-18,
+      -8.149484622653846e-18,
+      0.27143872669021796,
+      -0.27143872669021796,
+      -0.12656226848348645,
+      0.12656226848348645,
+      0.7149070857575113,
+      -2.2047623195157295e-18,
+      1.5332647825062724,
+      7.774075178120518e-18,
+      -0.271438726690218,
+      -0.27143872669021796,
+      0.12656226848348645,
+      0.12656226848348645,
+      0.304532630957336,
+      3.1006448581788456e-18,
+      -0.35884064575206354,
+      -1.818413265192583e-18
+    ],
+    "multipliers": [
+      6.767177295789207,
+      -6.098136049359067e-17,
+      -3.2732792245718035e-16,
+      4.2775378232364325e-16
+    ],
+    "enstrophy": 99.99999999999997,
+    "palinstrophy": 214.02237332521497,
+    "stretching": 453.99878469694977,
+    "rate": 449.71833723044546,
+    "max_abs_kkt_residual": 2.842170943040401e-14,
+    "scaled_kkt_residual": 1.5165649113921484e-16,
+    "max_abs_constraint_residual": 2.842170943040401e-14,
+    "tangent_hessian_min_eigenvalue": -882.7305510526438,
+    "tangent_hessian_max_eigenvalue": 2.113561416570504e-15,
+    "numeric_bordered_hessian_inertia": {
+      "positive": 4,
+      "negative": 62,
+      "near_zero": 2
+    },
+    "phase_chart": {
+      "selected_real_amplitudes": [
+        -5.771523220042982e-17,
+        1.0143957017227532e-16,
+        3.625910540438191
+      ],
+      "translation_jacobian_numeric_rank": 1,
+      "translation_jacobian": [
+        [
+          -5.771523220042982e-17,
+          -0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0143957017227532e-16,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.625910540438191
+        ]
+      ],
+      "regular_chart": false,
+      "explanation": "At a phase-fixed point, row i is Re(z_i) times the selected wave vector."
+    }
+  },
+  "proof_status": {
+    "interval_krawczyk_verified": false,
+    "interval_bordered_hessian_inertia_verified": false,
+    "strict_local_maximum_proved": false,
+    "blockers": [
+      "The 68-dimensional KKT root has only a floating-point enclosure candidate.",
+      "No interval Krawczyk inclusion has been established.",
+      "The reported Hessian inertia is a double-precision diagnostic, not a proof.",
+      "The selected phase chart has numeric rank 1, so its KKT Jacobian retains 2 translation zero mode(s)."
+    ]
+  }
+}

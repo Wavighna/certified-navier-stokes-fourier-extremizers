@@ -1,0 +1,68 @@
+{
+  "truth_label": "standalone_exact_rational_competing_field_audit",
+  "independence_statement": "This checker imports only Python standard-library modules and does not import extreme_flows or production certificate code.",
+  "mode_count": 18,
+  "physical_space_formula": "u(a,b)=(-2*a*cos(y)-8*b*sin(y)*cos(z), 2*a*cos(z)+8*b*cos(x)*sin(z), 2*a*cos(x)-8*b*sin(x)*cos(y))",
+  "coefficients": {
+    "kinetic_energy": [
+      "3",
+      "0",
+      "24"
+    ],
+    "helicity": [
+      "0",
+      "0",
+      "0"
+    ],
+    "enstrophy": [
+      "3",
+      "0",
+      "48"
+    ],
+    "palinstrophy": [
+      "3",
+      "0",
+      "96"
+    ],
+    "stretching": [
+      "0",
+      "24",
+      "0",
+      "0"
+    ]
+  },
+  "expected_coefficients": {
+    "kinetic_energy": [
+      "3",
+      "0",
+      "24"
+    ],
+    "helicity": [
+      "0",
+      "0",
+      "0"
+    ],
+    "enstrophy": [
+      "3",
+      "0",
+      "48"
+    ],
+    "palinstrophy": [
+      "3",
+      "0",
+      "96"
+    ],
+    "stretching": [
+      "0",
+      "24",
+      "0",
+      "0"
+    ]
+  },
+  "all_coefficients_match": true,
+  "source": {
+    "path": "scripts/audit_competing_standalone.py",
+    "sha256": "4664b63189fc74d2335ae80465d69179cb2338704f313878b311fa2cf67167f8"
+  },
+  "scope": "exact audit of the explicit two-amplitude field only; not a full 64-variable KKT or global optimization certificate"
+}

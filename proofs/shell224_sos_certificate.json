@@ -1,0 +1,20 @@
+{
+  "truth_label": "proved_exact_sos_shell224_enstrophy_production_bound",
+  "statement": "For the (2,2,4) shell component A224 of the exact 16-pair stretching cubic, A224^2 <= E2^2 E4, hence |A224| <= E2 sqrt(E4).",
+  "scope": "one shellwise component in the fixed 64-real-coordinate Fourier class",
+  "proof": {
+    "degree_two_monomial_basis_size": 300,
+    "rational_gram_sha256": "c918e2e0b89ab9c57137b49fbd91fda356c9afc94cd5a0817fa8082d7f771441",
+    "exact_quartic_monomial_count": 312,
+    "positive_schur_pivot_count": 106,
+    "zero_schur_remainder_dimension": 194,
+    "all_exact_pivots_positive": true,
+    "coefficient_identity_verified": true,
+    "gram_positive_semidefinite_verified": true
+  },
+  "claims": {
+    "shell224_bound_proved": true,
+    "shell224_constant_sharp_proved": false,
+    "full_64d_inviscid_globality_proved": false
+  }
+}

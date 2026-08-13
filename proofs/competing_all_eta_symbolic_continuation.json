@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "truth_label": "exact_symbolic_continuation_certificate_for_uniform_competing_branch_local_maximality",
+  "statement": "For every E,nu>0, the competing branch is a strict local maximum modulo translations in the fixed 64-real-control Fourier class. This exact symbolic continuation proof is finite dimensional and does not claim full-space global maximality or any PDE statement.",
+  "parameter_interval": {
+    "s_range": "0<s<1",
+    "eta_relation": "eta=4s^2/(1-s^2)^2",
+    "generalized_operator": "D_E^(-1)[Hessian(R)-lambda Hessian(E)]",
+    "self_adjoint_similarity": "D_E^(-1)H is similar to D_E^(-1/2) H D_E^(-1/2), which is real symmetric"
+  },
+  "zero_crossing_certificate": {
+    "trivial_even": {
+      "translation_zero_multiplicity": 0,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    },
+    "two_dimensional_even": {
+      "translation_zero_multiplicity": 0,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    },
+    "three_dimensional_even": {
+      "translation_zero_multiplicity": 0,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    },
+    "trivial_odd": {
+      "translation_zero_multiplicity": 0,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    },
+    "two_dimensional_odd": {
+      "translation_zero_multiplicity": 0,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    },
+    "three_dimensional_odd": {
+      "translation_zero_multiplicity": 3,
+      "nontranslation_t_zero_root_count_on_open_unit_s_interval": 0
+    }
+  },
+  "exact_sample": {
+    "s": "1/2",
+    "sector_root_counts_with_multiplicity": {
+      "trivial_even": {
+        "positive": 1,
+        "negative": 1,
+        "zero": 0
+      },
+      "two_dimensional_even": {
+        "positive": 0,
+        "negative": 6,
+        "zero": 0
+      },
+      "three_dimensional_even": {
+        "positive": 0,
+        "negative": 24,
+        "zero": 0
+      },
+      "trivial_odd": {
+        "positive": 0,
+        "negative": 2,
+        "zero": 0
+      },
+      "two_dimensional_odd": {
+        "positive": 0,
+        "negative": 6,
+        "zero": 0
+      },
+      "three_dimensional_odd": {
+        "positive": 0,
+        "negative": 21,
+        "zero": 3
+      }
+    },
+    "full_generalized_hessian_inertia": {
+      "positive": 1,
+      "negative": 60,
+      "zero": 3
+    }
+  },
+  "tangent_trivial_even_sector": {
+    "direction": "w=(16b,-a)",
+    "curvature": "32*(s**2 - 3)*(s**2 + 1)/(3*s)",
+    "sign_on_open_unit_interval": "strictly negative"
+  },
+  "constraint_and_orbit_geometry": {
+    "sector_enstrophy_orthogonality": {
+      "trivial_even": {
+        "dimension": 2,
+        "enstrophy_orthogonal_to_primary": false,
+        "enstrophy_orthogonal_to_secondary": false
+      },
+      "two_dimensional_even": {
+        "dimension": 6,
+        "enstrophy_orthogonal_to_primary": true,
+        "enstrophy_orthogonal_to_secondary": true
+      },
+      "three_dimensional_even": {
+        "dimension": 24,
+        "enstrophy_orthogonal_to_primary": true,
+        "enstrophy_orthogonal_to_secondary": true
+      },
+      "trivial_odd": {
+        "dimension": 2,
+        "enstrophy_orthogonal_to_primary": true,
+        "enstrophy_orthogonal_to_secondary": true
+      },
+      "two_dimensional_odd": {
+        "dimension": 6,
+        "enstrophy_orthogonal_to_primary": true,
+        "enstrophy_orthogonal_to_secondary": true
+      },
+      "three_dimensional_odd": {
+        "dimension": 24,
+        "enstrophy_orthogonal_to_primary": true,
+        "enstrophy_orthogonal_to_secondary": true
+      }
+    },
+    "nontrivial_sectors_are_enstrophy_tangent": true,
+    "translation_membership": [
+      {
+        "branch_basis_vector": "primary",
+        "axis": 0,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      },
+      {
+        "branch_basis_vector": "primary",
+        "axis": 1,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      },
+      {
+        "branch_basis_vector": "primary",
+        "axis": 2,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      },
+      {
+        "branch_basis_vector": "secondary",
+        "axis": 0,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      },
+      {
+        "branch_basis_vector": "secondary",
+        "axis": 1,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      },
+      {
+        "branch_basis_vector": "secondary",
+        "axis": 2,
+        "nonzero": true,
+        "lies_in_odd_three_dimensional_sector": true
+      }
+    ],
+    "all_translation_basis_tangents_in_odd_three_dimensional_sector": true,
+    "branch_translation_gram_determinant": "8*(3+s^2)^3/729",
+    "branch_translation_orbit_dimension": 3
+  },
+  "logic": {
+    "only_three_translation_zeros": "The odd three-dimensional sector contributes exactly t^3; all other t=0 factors have no root on 0<s<1.",
+    "continuation": "The generalized spectrum is real and continuous. Since no nontranslation eigenvalue crosses zero, the exact sample inertia holds throughout the connected open interval.",
+    "constraint_restriction": "All nontrivial isotypic sectors are E-tangent. The remaining trivial-even tangent line has the displayed negative curvature. The odd three-dimensional sector carries precisely the three linearly independent translation tangents."
+  },
+  "checker_source": {
+    "path": "scripts/certify_competing_all_eta_symbolic.py",
+    "size_bytes": 10211,
+    "sha256": "a288a79af1ec2a60fa268a9086dec301b6172fdd1fe306a3ccfadeb2e81efeb3"
+  },
+  "factor_source": {
+    "path": "scripts/derive_competing_hessian_blocks.py",
+    "size_bytes": 11987,
+    "sha256": "69fc6bddd8e2a75db0241972046d355a3807c697ca763f11a41e8f278fdb1ad8"
+  },
+  "polynomial_source": {
+    "path": "src/extreme_flows/certify.py",
+    "size_bytes": 62613,
+    "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+  },
+  "symmetry_source": {
+    "path": "src/extreme_flows/static_symmetry.py",
+    "size_bytes": 16437,
+    "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+  },
+  "formula_source": {
+    "path": "src/extreme_flows/reduced_competing.py",
+    "size_bytes": 8126,
+    "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+  },
+  "claims": {
+    "strict_full_space_local_maximum_modulo_translations_for_all_positive_eta": true,
+    "full_space_global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

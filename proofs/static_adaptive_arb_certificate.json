@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "truth_label": "proof_grade_adaptive_chart_strict_local_maximum",
+  "source": {
+    "path": "artifacts\\proofs\\static_adaptive_kkt_candidate.json",
+    "sha256": "aabadb509a0f14d5d338b019eb0d593cccfc2fc517a17b2bdbbc2ff549d958c9",
+    "source_truth_label": "numerical_static_kkt_candidate_only"
+  },
+  "exact_model": {
+    "dimension": 64,
+    "constraint_count": 4,
+    "phase_waves": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "phase_wave_matrix_determinant": 4,
+    "nonzero_canonical_cubic_entries": 512,
+    "exact_cubic_tensor_sha256": "78635a28c226d165a1936ea40a0437fb0a575251622ae06fc8467ea890e820b1",
+    "viscosity": "1/100",
+    "target_enstrophy": "100"
+  },
+  "proof_method": {
+    "root": "For g(z)=z-YF(z), Arb proves Y nonsingular, K(x,X) strictly inside X, and the weighted infinity norm of I-YJ(X) below one. Brouwer gives a fixed point, nonsingular Y turns it into F(z)=0, and the contraction bound proves uniqueness in X.",
+    "inertia": "congruence by an exactly represented dyadic matrix; Arb proves that matrix invertible, then every transformed Gershgorin disc is separated from zero with 4 positive and 64 negative discs",
+    "local_maximum": "the bordered inertia and full-rank four-constraint Jacobian imply negative definiteness on the 60-dimensional tangent space"
+  },
+  "arb": {
+    "dependency": {
+      "package": "python-flint",
+      "version": "0.9.0",
+      "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "distribution_metadata": {
+        "path": "python_flint-0.9.0.dist-info/METADATA",
+        "size_bytes": 24779,
+        "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+      },
+      "distribution_record": {
+        "path": "python_flint-0.9.0.dist-info/RECORD",
+        "size_bytes": 15425,
+        "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+      },
+      "primary_extension_binary": {
+        "path": "flint/pyflint.pyd",
+        "size_bytes": 23040,
+        "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+      },
+      "compiled_binary_count": 39,
+      "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+    },
+    "runs": [
+      {
+        "precision_bits": 256,
+        "krawczyk_verified": true,
+        "existence_verified": true,
+        "uniqueness_verified": true,
+        "krawczyk_attempts": [
+          {
+            "radius_power_of_two": -30,
+            "all_components_strictly_interior": true,
+            "failed_component_count": 0,
+            "max_image_to_box_radius_ratio": 9.543612247129824e-06,
+            "preconditioner_nonsingular": true,
+            "weighted_infinity_contraction_strictly_below_one": true,
+            "weighted_infinity_contraction_upper_float": 9.543612047813145e-06,
+            "all_existence_and_uniqueness_hypotheses_verified": true
+          }
+        ],
+        "selected_attempt": {
+          "radius_power_of_two": -30,
+          "all_components_strictly_interior": true,
+          "failed_component_count": 0,
+          "max_image_to_box_radius_ratio": 9.543612247129824e-06,
+          "preconditioner_nonsingular": true,
+          "weighted_infinity_contraction_strictly_below_one": true,
+          "weighted_infinity_contraction_upper_float": 9.543612047813145e-06,
+          "all_existence_and_uniqueness_hypotheses_verified": true
+        },
+        "preconditioner_nonsingular": true,
+        "preconditioner_determinant_ball": "[2.04152518236465426661124700703405993742705958826136336515014938869255e-117 +/- 4.71e-186]",
+        "weighted_infinity_contraction_upper_ball": "[9.54361204781314627455794019146488291043953811030844549358180632147604e-6 +/- 2.42e-75]",
+        "interval_jacobian_regular": true,
+        "newton_last_correction_ball": "[3.87354145120352762978808409236888905287005101478493856441792926871920e-75 +/- 1.11e-144]",
+        "refined_residual_abs_upper_ball": "[7.61653211168047430843511919395564986551170276357799732001809632933155e-74 +/- 1.08e-144]",
+        "root_box_balls": [
+          "[3.62591054 +/- 3.82e-9]",
+          "[-3.62591054 +/- 3.82e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[+/- 9.32e-10]",
+          "[-1.90489373 +/- 1.86e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[0.67445876 +/- 5.38e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.29949456 +/- 3.14e-9]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-1.69174260 +/- 4.50e-9]",
+          "[+/- 9.32e-10]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[6.7671773 +/- 1.06e-8]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]"
+        ],
+        "adaptive_chart_regular": true,
+        "selected_real_amplitude_balls": [
+          "[-0.47064502 +/- 3.58e-9]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[3.62591054 +/- 3.82e-9]"
+        ],
+        "bordered_inertia": {
+          "verified": true,
+          "congruence_invertible": true,
+          "congruence_determinant_ball": "[0.999999999999998709248270270741713973265290112950204359008262721829949 +/- 2.10e-70]",
+          "positive": 4,
+          "negative": 64,
+          "zero_or_unresolved": 0,
+          "bordered_hessian_nonsingular": true,
+          "constraint_jacobian_full_row_rank": true,
+          "constraint_rank_argument": "If the 4x64 constraint Jacobian C lacked full row rank, some nonzero mu would satisfy C^T mu=0, making (0,mu) a null vector of the bordered Hessian. Its certified nonsingularity therefore implies rank(C)=4.",
+          "minimum_signed_gershgorin_margin_ball": "[0.272090880501780858709578671463279237341071373029293666736212160613733 +/- 3.81e-70]"
+        }
+      },
+      {
+        "precision_bits": 512,
+        "krawczyk_verified": true,
+        "existence_verified": true,
+        "uniqueness_verified": true,
+        "krawczyk_attempts": [
+          {
+            "radius_power_of_two": -30,
+            "all_components_strictly_interior": true,
+            "failed_component_count": 0,
+            "max_image_to_box_radius_ratio": 9.543612247129824e-06,
+            "preconditioner_nonsingular": true,
+            "weighted_infinity_contraction_strictly_below_one": true,
+            "weighted_infinity_contraction_upper_float": 9.543612047813145e-06,
+            "all_existence_and_uniqueness_hypotheses_verified": true
+          }
+        ],
+        "selected_attempt": {
+          "radius_power_of_two": -30,
+          "all_components_strictly_interior": true,
+          "failed_component_count": 0,
+          "max_image_to_box_radius_ratio": 9.543612247129824e-06,
+          "preconditioner_nonsingular": true,
+          "weighted_infinity_contraction_strictly_below_one": true,
+          "weighted_infinity_contraction_upper_float": 9.543612047813145e-06,
+          "all_existence_and_uniqueness_hypotheses_verified": true
+        },
+        "preconditioner_nonsingular": true,
+        "preconditioner_determinant_ball": "[2.0415251823646542666112470070340599374270595882613633651501493886925452999776218060628739700492250674621108226375943004851415599677501016736039239e-117 +/- 2.85e-263]",
+        "weighted_infinity_contraction_upper_ball": "[9.5436120478131462745579401914648829104395381103084454935818063214760155948325701154161801274564487348190532348695150858359130363242457875530313935e-6 +/- 9.33e-153]",
+        "interval_jacobian_regular": true,
+        "newton_last_correction_ball": "[3.3310151232896916970669652945003997686023516597682284063685741426677278949510562504531449063403816018980005632138996559358277055566434883397721870e-152 +/- 9.82e-299]",
+        "refined_residual_abs_upper_ball": "[6.5118068697234544216308679941563771015368932599854451737594011452547413179616190745530937776279772268958696171158404417167618328957275684817326789e-151 +/- 3.50e-297]",
+        "root_box_balls": [
+          "[3.62591054 +/- 3.82e-9]",
+          "[-3.62591054 +/- 3.82e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[+/- 9.32e-10]",
+          "[-1.90489373 +/- 1.86e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.67445876 +/- 5.38e-9]",
+          "[0.67445876 +/- 5.38e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.29949456 +/- 3.14e-9]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-1.69174260 +/- 4.50e-9]",
+          "[+/- 9.32e-10]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[0.29949456 +/- 3.14e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[6.7671773 +/- 1.06e-8]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]",
+          "[+/- 9.32e-10]"
+        ],
+        "adaptive_chart_regular": true,
+        "selected_real_amplitude_balls": [
+          "[-0.47064502 +/- 3.58e-9]",
+          "[-0.47064502 +/- 3.58e-9]",
+          "[3.62591054 +/- 3.82e-9]"
+        ],
+        "bordered_inertia": {
+          "verified": true,
+          "congruence_invertible": true,
+          "congruence_determinant_ball": "[0.99999999999999870924827027074171397326529011295020435900826272182994879010334968491242585374592840722025895430118198349156207870735398826137213150 +/- 4.95e-147]",
+          "positive": 4,
+          "negative": 64,
+          "zero_or_unresolved": 0,
+          "bordered_hessian_nonsingular": true,
+          "constraint_jacobian_full_row_rank": true,
+          "constraint_rank_argument": "If the 4x64 constraint Jacobian C lacked full row rank, some nonzero mu would satisfy C^T mu=0, making (0,mu) a null vector of the bordered Hessian. Its certified nonsingularity therefore implies rank(C)=4.",
+          "minimum_signed_gershgorin_margin_ball": "[0.27209088050178080319842744020545221615948796848827804173621216061373261957076943865830445440280337490468215399240166651096556637663296344056909152 +/- 1.58e-147]"
+        }
+      }
+    ]
+  },
+  "checker_source": {
+    "module": {
+      "path": "src/extreme_flows/certify.py",
+      "size_bytes": 62613,
+      "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+    },
+    "script": {
+      "path": "scripts/certify_static_adaptive.py",
+      "size_bytes": 1705,
+      "sha256": "139c972cbae6485fb3b627021ea361b1d5fd22cba515ef3cc065be25c00dae48"
+    }
+  },
+  "claims": {
+    "unique_kkt_root_in_reported_box": true,
+    "krawczyk_preconditioner_nonsingular": true,
+    "interval_jacobian_regular_on_reported_box": true,
+    "bordered_hessian_inertia_4_positive_64_negative": true,
+    "adaptive_phase_chart_is_local_translation_slice": true,
+    "strict_local_maximum_modulo_translations_in_adaptive_chart": true,
+    "global_maximum": false
+  },
+  "original_e_axis_chart_status": {
+    "still_blocked": true,
+    "reason": "the numerical orbit collapses its selected e1/e2 amplitudes and retains two translation zero modes; no regular e-axis interval chart has been certified"
+  },
+  "limitations": {
+    "finite_dimensional_low_mode_class_only": true,
+    "global_optimality_not_proved": true,
+    "navier_stokes_trajectory_statement": false
+  }
+}

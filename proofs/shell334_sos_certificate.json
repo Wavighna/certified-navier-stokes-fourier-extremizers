@@ -1,0 +1,21 @@
+{
+  "truth_label": "proved_exact_sos_shell334_enstrophy_production_bound",
+  "statement": "For the (3,3,4) shell component A334, A334^2 <= (2/27) E3^2 E4.",
+  "scope": "one shellwise component in the fixed 64-real-coordinate Fourier class",
+  "proof": {
+    "degree_two_monomial_basis_size": 136,
+    "nonzero_upper_triangular_gram_entries": 208,
+    "rational_gram_sha256": "ba5850d08873177f5134d8f80222a47e0e9b3cb394fcd9bcf1e1381afc7c8289",
+    "exact_quartic_monomial_count": 184,
+    "positive_schur_pivot_count": 3,
+    "zero_schur_remainder_dimension": 133,
+    "all_exact_pivots_positive": true,
+    "coefficient_identity_verified": true,
+    "gram_positive_semidefinite_verified": true
+  },
+  "claims": {
+    "shell334_bound_proved": true,
+    "shell334_constant_sharp_proved": false,
+    "full_64d_inviscid_globality_proved": false
+  }
+}

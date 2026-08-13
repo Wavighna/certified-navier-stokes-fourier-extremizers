@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_uniform_high_eta_competing_full_space_local_maximum",
+  "statement": "For every E,nu>0 with eta=E/nu^2>=100, the exact competing two-amplitude KKT branch is a strict local maximum modulo translations in the 64-real-control class. This is not a full-space global-maximality or PDE regularity statement.",
+  "normalization_and_cover": {
+    "unit_enstrophy_parameterization": "a=sqrt(3-s^2)/3, b=s/12, nu=(1-s^2)/(2s)",
+    "eta_relation": "eta=4s^2/(1-s^2)^2",
+    "rational_s_cover": [
+      "9049/10000",
+      "1"
+    ],
+    "interval_count": 238,
+    "eta_100_threshold_lower_bound": "sqrt(101/100)-1/10 > 9049/10000",
+    "squared_positive_side_difference": "17599/100000000",
+    "phase_chart": {
+      "waves": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "polarizations": [
+        0,
+        1,
+        0
+      ],
+      "regularity": "a^2=(3-s^2)/9>=2/9 on the covered range"
+    }
+  },
+  "arb": {
+    "dependency": {
+      "package": "python-flint",
+      "version": "0.9.0",
+      "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "distribution_metadata": {
+        "path": "python_flint-0.9.0.dist-info/METADATA",
+        "size_bytes": 24779,
+        "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+      },
+      "distribution_record": {
+        "path": "python_flint-0.9.0.dist-info/RECORD",
+        "size_bytes": 15425,
+        "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+      },
+      "primary_extension_binary": {
+        "path": "flint/pyflint.pyd",
+        "size_bytes": 23040,
+        "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+      },
+      "compiled_binary_count": 39,
+      "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+    },
+    "runs": [
+      {
+        "precision_bits": 256,
+        "certified_intervals": 238,
+        "total_intervals": 238,
+        "all_intervals_certified": true,
+        "minimum_signed_gershgorin_margin": "[0.0527772591426638538166540379163821402904387264638949471974771347173576143487 +/- 8.90e-77]",
+        "failures": []
+      },
+      {
+        "precision_bits": 512,
+        "certified_intervals": 238,
+        "total_intervals": 238,
+        "all_intervals_certified": true,
+        "minimum_signed_gershgorin_margin": "[0.052777259142663853816654037916382140290438726463894947197477134717357614348514173055011896463502354982520351890756302521008403361344537815126050420168069 +/- 7.87e-154]",
+        "failures": []
+      }
+    ]
+  },
+  "checker_source": {
+    "path": "scripts/certify_competing_high_eta_uniform.py",
+    "size_bytes": 8721,
+    "sha256": "0a63ca3df5492a1fe443d0f0cc913c1929b056c5b1bcced3e0766d3dd5779844"
+  },
+  "formula_source": {
+    "path": "src/extreme_flows/reduced_competing.py",
+    "size_bytes": 8126,
+    "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+  },
+  "polynomial_source": {
+    "path": "src/extreme_flows/certify.py",
+    "size_bytes": 62613,
+    "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+  },
+  "claims": {
+    "strict_full_space_local_maximum_modulo_translations_for_all_eta_ge_100": true,
+    "full_space_global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

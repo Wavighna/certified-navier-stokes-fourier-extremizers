@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "truth_label": "finite_parameter_sweep_of_certified_competing_branch_local_maxima",
+  "dependency": {
+    "python_flint": "0.9.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "checker_source": {
+    "stability_sweep": {
+      "path": "scripts/certify_competing_branch_sweep.py",
+      "size_bytes": 5629,
+      "sha256": "dd59eea880bda89b3ba0fb34d747d50cc657eb8f55719e72fe52ca3dd90e4b5f"
+    },
+    "exact_polynomial": {
+      "path": "src/extreme_flows/certify.py",
+      "size_bytes": 62613,
+      "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+    },
+    "competing_formula": {
+      "path": "src/extreme_flows/reduced_competing.py",
+      "size_bytes": 8126,
+      "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+    }
+  },
+  "statement": "Each listed parameter point separately has a 256/512-bit local-maximum certificate; no interpolation or all-parameter stability claim is made.",
+  "entries": [
+    {
+      "viscosity": "1/1",
+      "enstrophy": "100",
+      "eta": "100",
+      "runs": [
+        {
+          "precision_bits": 256,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.149618483261044697354294774266866239480431417200220682911047371270049075172e-6 +/- 4.61e-82]",
+          "last_newton_correction": "[6.909896212226079928325890957226141576467955529736375648647413764014802762473e-76 +/- 3.36e-152]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.9557773641109428066527153880128339685416507859276634955014877381111647197543 +/- 5.42e-77]"
+          }
+        },
+        {
+          "precision_bits": 512,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.14961848337206699981681042830922940628951344845022068291104737127004680918520910817159505901561107669843160230958535837086782162847403133572259672324766e-6 +/- 5.12e-159]",
+          "last_newton_correction": "[5.55964121613929795643218098244960987492832503358722950090564773343649479553732064197252288578347913592868033606100669241285559087493491028025656857499601e-153 +/- 1.43e-306]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.955777364110942529096959231723698862633733763222585370501487738111164719754320095142889946013947868208949586709256106477493862208203815418851417625974201 +/- 4.96e-154]"
+          }
+        }
+      ],
+      "strict_local_maximum_certified_at_both_precisions": true
+    },
+    {
+      "viscosity": "1/2",
+      "enstrophy": "100",
+      "eta": "400",
+      "runs": [
+        {
+          "precision_bits": 256,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.216866257263793856515564722953649944705763962158700137932994146024822547343e-6 +/- 5.60e-82]",
+          "last_newton_correction": "[1.105082092265546426438151419355352242822035519149240522809858522039806259489e-75 +/- 3.60e-151]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.9495777697794517027209436870720040931809132001493677813303253487645613316335 +/- 2.94e-77]"
+          }
+        },
+        {
+          "precision_bits": 512,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.21686625880896980840195822494198776788415464187861065823436126441813769858677368874331249158212450969568545055447993696764123259551593550384801721177663e-6 +/- 7.21e-159]",
+          "last_newton_correction": "[1.38118771680774815669821762779453657705436750138229415145277269666911622818592315797548474834978294886210655848548216702801942366388305534515943670746212e-152 +/- 1.93e-307]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.949577769779451036587128911978079839001912345657180281330325348764561331633172735043233206869068163504514936792316764528285828069617136251450437830942729 +/- 5.32e-154]"
+          }
+        }
+      ],
+      "strict_local_maximum_certified_at_both_precisions": true
+    },
+    {
+      "viscosity": "1/5",
+      "enstrophy": "100",
+      "eta": "2500",
+      "runs": [
+        {
+          "precision_bits": 256,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.261062252975744655746998920346446521366857649157868113001937767487140051199e-6 +/- 3.96e-82]",
+          "last_newton_correction": "[1.902397032654277806441041542168636963771342801870894445900697644197989659863e-75 +/- 1.91e-151]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.9453127625629833632215568696096970820122819346188089414867649735466327700196 +/- 4.35e-77]"
+          }
+        },
+        {
+          "precision_bits": 512,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.26106225632665853722703232223246232369891938012621663756500158912501933216113721549299132918381815928254619374396988424664384825780270945690067590372571e-6 +/- 6.27e-159]",
+          "last_newton_correction": "[9.87367058552637335839542032450931132048991732697435335654397674860827481157536323949864631983757354272844941684673133055632786892654722448583676442986600e-153 +/- 4.88e-306]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.945312762562984265277764377549386176213012258410312847736764973546632770019667319562664583235109717555930933119482830979945345612853693609797683285676721 +/- 2.02e-154]"
+          }
+        }
+      ],
+      "strict_local_maximum_certified_at_both_precisions": true
+    },
+    {
+      "viscosity": "1/10",
+      "enstrophy": "100",
+      "eta": "10000",
+      "runs": [
+        {
+          "precision_bits": 256,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.276503802917029856964528056441805215960422765986741456125995225969718166714e-6 +/- 5.85e-82]",
+          "last_newton_correction": "[6.520736081528853915783750139964064908713799164818786777182137710859400902730e-76 +/- 4.23e-152]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.9437852683537431243900805918987973528060536777780023599751237472863645859972 +/- 2.91e-77]"
+          }
+        },
+        {
+          "precision_bits": 512,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.27650380421321986393245218972881246522319491048613424329632568490444554965115049918899219634199105884508963889425687697854474749687174801366078111537861e-6 +/- 4.05e-159]",
+          "last_newton_correction": "[9.11329931454332035971221109639954219042884675687840233576219527550053855959769567418787818626532671199966075822370978761055011375076700619948489703931523e-153 +/- 3.64e-306]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.943785268353867695431903418862516863135194535418300270460479591458248578855632982118153246535232132578304681838484394937877954153494499118561946265096815 +/- 2.68e-154]"
+          }
+        }
+      ],
+      "strict_local_maximum_certified_at_both_precisions": true
+    },
+    {
+      "viscosity": "1/20",
+      "enstrophy": "100",
+      "eta": "40000",
+      "runs": [
+        {
+          "precision_bits": 256,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.284364840897267018642044706222569983003016427241201296974413475069384119528e-6 +/- 5.08e-82]",
+          "last_newton_correction": "[1.141032550050446673126759603856062873643097356967157996387114027748810980170e-75 +/- 4.19e-151]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.9429996286771630891432969818539179029745484708823482909887111050358952593658 +/- 4.26e-77]"
+          }
+        },
+        {
+          "precision_bits": 512,
+          "verified": true,
+          "krawczyk_contraction_upper": "[1.28436484089726701864204470622256998300301642724120129697441347506937854910385133865503344935358790801169740406480170029252450858703905979722913396494265e-6 +/- 2.93e-159]",
+          "last_newton_correction": "[9.36410599622915368415566701473180934167188550694006016582947044039301446000217070523827959523447526951931656105423815237806497902458508536644179531730634e-153 +/- 4.42e-306]",
+          "phase_chart_regular": true,
+          "inertia": {
+            "verified": true,
+            "positive": 4,
+            "negative": 64,
+            "zero_or_unresolved": 0,
+            "minimum_margin": "[0.942999628677163089143296981853917902974548470882348290988711105035895259366565586764787674902489748492421498218383572533822539922211917525536178220433239 +/- 1.76e-154]"
+          }
+        }
+      ],
+      "strict_local_maximum_certified_at_both_precisions": true
+    }
+  ],
+  "claims": {
+    "all_listed_points_certified": true,
+    "parameter_uniform_full_space_local_maximum": false,
+    "full_space_global_maximum": false
+  }
+}

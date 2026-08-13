@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_elementary_parameterized_interior_branch",
+  "dimensionless_variables": {
+    "eta": "E0/nu^2",
+    "mu": "lambda/nu"
+  },
+  "quartic_low_to_high": [
+    "68368-2048*eta",
+    "54656-512*eta",
+    "14936-32*eta",
+    "1696",
+    "69"
+  ],
+  "threshold": "1867/4",
+  "proof": {
+    "descending_sign_pattern_above_threshold": [
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "positive_root": "Descartes gives at most one; F(0)<0 and F(+infinity)>0 give existence",
+    "admissibility": "F_eta(sqrt(28)) <= -833440-273664*sqrt(7)<0, hence mu>sqrt(28)",
+    "conclusion": "a2,d2,f2 are positive on the unique positive interior branch"
+  },
+  "current_normalization_witness": {
+    "eta": "1000000",
+    "formula_low_to_high": [
+      "-2047931632",
+      "-511945344",
+      "-31985064",
+      "1696",
+      "69"
+    ]
+  },
+  "claims": {
+    "unique_admissible_positive_interior_kkt_branch_for_eta_gt_1867_over_4": true,
+    "parameter_uniform_global_maximum": false,
+    "full_64d_global_maximum": false,
+    "navier_stokes_trajectory_or_regularity_statement": false
+  },
+  "checker_source": {
+    "script": {
+      "path": "scripts/certify_parameterized_static_branch.py",
+      "size_bytes": 3087,
+      "sha256": "aa642079c06104fb06ea14b2cc9686e8291872c9d005fc4e9348ab0b76435cd5"
+    },
+    "parameterized_reduction": {
+      "path": "src/extreme_flows/reduced_static_parameterized.py",
+      "size_bytes": 4505,
+      "sha256": "3346edb67fcce2d6574ca7f8187a0688a917c0bd2fd53e5d8f761fe3a4eace5a"
+    },
+    "reduced_formula": {
+      "path": "src/extreme_flows/reduced_static.py",
+      "size_bytes": 3797,
+      "sha256": "6beef16df85466b11090571a4ed60cc3500c36a5c5bcaad47b60519b4c01d701"
+    }
+  }
+}

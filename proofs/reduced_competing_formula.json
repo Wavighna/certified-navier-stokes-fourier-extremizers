@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "truth_label": "exact_two_amplitude_symmetry_formula_and_parameter_uniform_full_kkt_branch",
+  "scope": "global only on the displayed sign-gauged two-amplitude plane",
+  "embedding": {
+    "primary_indices_with_coefficient_a": [
+      0,
+      13,
+      40
+    ],
+    "secondary_indices_with_signed_coefficient_b": {
+      "11": -1,
+      "19": -1,
+      "31": -1,
+      "39": -1,
+      "47": 1,
+      "55": -1
+    }
+  },
+  "spectral_support": {
+    "a_wave_square_shells": [
+      1
+    ],
+    "b_wave_square_shells": [
+      2
+    ],
+    "interpretation": "an exact nonhelical coupling of the |k|^2=1 and |k|^2=2 shells"
+  },
+  "symmetry_fixed_space": {
+    "generators": [
+      {
+        "Q": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "quarter_period_shift_m": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "Q": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "quarter_period_shift_m": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "exact_common_fixed_space_dimension": 2,
+    "embedding_spans_exact_common_fixed_space": true
+  },
+  "exact_formulas": {
+    "stretching": "24*a^2*b",
+    "enstrophy": "3*a^2 + 48*b^2",
+    "palinstrophy": "3*a^2 + 96*b^2",
+    "rate": "24*a^2*b - 2*nu*(3*a^2 + 96*b^2)"
+  },
+  "maximization": {
+    "reduced_rate_after_eliminating_a": "8*E*b - 384*b^3 - 2*nu*E - 96*nu*b^2",
+    "critical_point": "b=(sqrt(E+nu^2)-nu)/12",
+    "derivative": "8*E - 1152*b^2 - 192*nu*b",
+    "strict_concavity": "-2304*b - 192*nu < 0 for b>=0, nu>0",
+    "endpoint_signs": "f'(0)=8E>0 and f'(sqrt(E/48))<0",
+    "conclusion": "the stated critical point is the unique global maximum on 0<=b<=sqrt(E/48)",
+    "optimized_rate_closed_form": "(4/9)*((E+nu^2)^(3/2)-6*E*nu-nu^3)",
+    "positive_rate_exactly_when": "E/nu^2 > (33+15*sqrt(5))/2 for E,nu>0",
+    "symbolic_rate_reduction": {
+      "substitution_remainder": "0",
+      "dimensionless_rate_times_9_over_4": "-6*eta + (eta + 1)**(3/2) - 1",
+      "factor_after_y_equals_sqrt_eta_plus_1": "(y - 1)*(y**2 - 5*y - 5)",
+      "positive_eta_threshold": "33/2 + 15*sqrt(5)/2",
+      "threshold_proved": true
+    }
+  },
+  "eta_10000_point": {
+    "a": 4.737323435554677,
+    "b": 0.8250416656250521,
+    "enstrophy": 100.0,
+    "palinstrophy": 132.6733000008333,
+    "stretching": 444.37866166680556,
+    "rate": 417.8440016666389,
+    "closed_form_rate": 417.8440016666389
+  },
+  "relation_to_full_certificate": {
+    "high_branch_certificate_sha256": "784a09ea6e2c9048cee9a25b76472bd0e46d6a83e132944be3bc878cf436bde4",
+    "strictly_beats_six_amplitude_ansatz": true
+  },
+  "exact_full_polynomial_samples": [
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "1"
+    ],
+    [
+      "1",
+      "3"
+    ]
+  ],
+  "exact_restricted_polynomial_coefficients_recovered_from_full_64_mode_convolution": {
+    "enstrophy": [
+      "3",
+      "0",
+      "48"
+    ],
+    "palinstrophy": [
+      "3",
+      "0",
+      "96"
+    ],
+    "stretching": [
+      "0",
+      "24",
+      "0",
+      "0"
+    ]
+  },
+  "exact_auxiliary_coefficients_recovered_from_full_64_mode_convolution": {
+    "kinetic_energy": [
+      "3",
+      "0",
+      "24"
+    ],
+    "helicity": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "exact_full_kkt_reduction_for_symbolic_positive_E_and_nu": {
+    "basis": "canonical 64-control exact Fourier polynomial",
+    "phase_chart": {
+      "waves": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "polarizations": [
+        0,
+        1,
+        0
+      ]
+    },
+    "kkt_multiplier": "lambda=8*b-2*nu; three phase multipliers vanish",
+    "ideal_generators": [
+      "3*a^2+48*b^2-E",
+      "144*b^2+24*nu*b-E"
+    ],
+    "stationarity_remainder_count": 0,
+    "enstrophy_constraint_remainder": "0",
+    "all_full_kkt_remainders_vanish": true
+  },
+  "source": {
+    "reduced_competing": {
+      "path": "src/extreme_flows/reduced_competing.py",
+      "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+    },
+    "static_symmetry": {
+      "path": "src/extreme_flows/static_symmetry.py",
+      "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+    }
+  },
+  "limitations": {
+    "full_64d_global_maximum": false,
+    "symmetry_fixed_space_characterization": true,
+    "navier_stokes_trajectory_or_regularity_claim": false
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_uniform_competing_full_space_local_maximum_all_positive_eta",
+  "statement": "For every E,nu>0, the exact competing two-amplitude KKT branch is a strict local maximum modulo translations in the 64-real-control class. This is not a full-space global-maximality or PDE regularity statement.",
+  "normalization": {
+    "unit_enstrophy_parameterization": "a=sqrt(3-s^2)/3, b=s/12, nu=(1-s^2)/(2s)",
+    "eta_relation": "eta=4s^2/(1-s^2)^2 maps 0<s<1 bijectively to eta>0",
+    "rescaled_low_cover_congruence": "N(s)=s D(s)^T B(s) D(s), D=s^-1 on |k|^2=1 controls",
+    "low_cover_upper_endpoint": "47/50",
+    "overlap": "47/50 > 9049/10000, so the two covers exhaust 0<s<1",
+    "phase_chart_regular": "a^2=(3-s^2)/9>=2/9 for 0<=s<=1"
+  },
+  "arb": {
+    "dependency": {
+      "package": "python-flint",
+      "version": "0.9.0",
+      "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "distribution_metadata": {
+        "path": "python_flint-0.9.0.dist-info/METADATA",
+        "size_bytes": 24779,
+        "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+      },
+      "distribution_record": {
+        "path": "python_flint-0.9.0.dist-info/RECORD",
+        "size_bytes": 15425,
+        "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+      },
+      "primary_extension_binary": {
+        "path": "flint/pyflint.pyd",
+        "size_bytes": 23040,
+        "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+      },
+      "compiled_binary_count": 39,
+      "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+    },
+    "runs": [
+      {
+        "precision_bits": 256,
+        "rescaled_low_cover": {
+          "interval_count": 188,
+          "range": [
+            "0",
+            "47/50"
+          ],
+          "all_intervals_certified": true,
+          "failures": []
+        },
+        "ordinary_high_cover": {
+          "interval_count": 238,
+          "range": [
+            "9049/10000",
+            "1"
+          ],
+          "all_intervals_certified": true,
+          "failures": []
+        },
+        "all_intervals_certified": true,
+        "minimum_signed_gershgorin_margin": "[0.008370095304028081177705742441559041568842842331786765108621946192145255154 +/- 4.16e-76]"
+      },
+      {
+        "precision_bits": 512,
+        "rescaled_low_cover": {
+          "interval_count": 188,
+          "range": [
+            "0",
+            "47/50"
+          ],
+          "all_intervals_certified": true,
+          "failures": []
+        },
+        "ordinary_high_cover": {
+          "interval_count": 238,
+          "range": [
+            "9049/10000",
+            "1"
+          ],
+          "all_intervals_certified": true,
+          "failures": []
+        },
+        "all_intervals_certified": true,
+        "minimum_signed_gershgorin_margin": "[0.00837009530402808117770574244155904156884284233178676510862194619214525515414774417877197265625000000000000000000000000000000000000000000000000000000000 +/- 2.38e-153]"
+      }
+    ]
+  },
+  "checker_source": {
+    "path": "scripts/certify_competing_all_eta_uniform.py",
+    "size_bytes": 10816,
+    "sha256": "785a24c5b17381f8e5f548d0097735db519d34df8f2d310eb9b60912ac606e3e"
+  },
+  "high_cover_source": {
+    "path": "scripts/certify_competing_high_eta_uniform.py",
+    "size_bytes": 8721,
+    "sha256": "0a63ca3df5492a1fe443d0f0cc913c1929b056c5b1bcced3e0766d3dd5779844"
+  },
+  "formula_source": {
+    "path": "src/extreme_flows/reduced_competing.py",
+    "size_bytes": 8126,
+    "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+  },
+  "polynomial_source": {
+    "path": "src/extreme_flows/certify.py",
+    "size_bytes": 62613,
+    "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+  },
+  "claims": {
+    "strict_full_space_local_maximum_modulo_translations_for_all_positive_eta": true,
+    "full_space_global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

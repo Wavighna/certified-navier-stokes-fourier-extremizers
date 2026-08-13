@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_parameter_uniform_high_eta_global_static_ansatz_maximum",
+  "parameter_regime": "eta=E0/nu^2 > 1867/4",
+  "proof": {
+    "threshold": "1867/4",
+    "interior": {
+      "unique_admissible_positive_branch": true,
+      "eta_of_mu": "(69 mu^4+1696 mu^3+14936 mu^2+54656 mu+68368)/(32(mu+8)^2)",
+      "rate_over_nu_cubed": "(23 mu^5+516 mu^4+3840 mu^3+8864 mu^2-8432 mu-33728)/(16(mu+8)^2)"
+    },
+    "faces": {
+      "acd": {
+        "unique_positive_multiplier_for_each_eta_above_threshold": true,
+        "crossing_resultant_low_to_high": [
+          "33611390720",
+          "45891581952",
+          "26841508864",
+          "8786443264",
+          "1762843872",
+          "222383744",
+          "17260704",
+          "755136",
+          "14283"
+        ],
+        "all_nontrivial_resultant_coefficients_strictly_positive": true
+      },
+      "aef": {
+        "unique_positive_multiplier_for_each_eta_above_threshold": true,
+        "crossing_resultant_low_to_high": [
+          "35539083008",
+          "47603404800",
+          "27470241280",
+          "8909605888",
+          "1776452064",
+          "223188224",
+          "17280576",
+          "755136",
+          "14283"
+        ],
+        "all_nontrivial_resultant_coefficients_strictly_positive": true
+      },
+      "bdf": {
+        "unique_positive_multiplier_for_each_eta_above_threshold": true,
+        "crossing_resultant_low_to_high": [
+          "33012768512",
+          "45179445248",
+          "26501192192",
+          "8703757312",
+          "1752023008",
+          "221655040",
+          "17240832",
+          "755136",
+          "14283"
+        ],
+        "all_nontrivial_resultant_coefficients_strictly_positive": true
+      }
+    },
+    "connectedness_argument": "The interior and each face branch are continuous and unique above the threshold. A rate equality would force its positive-coefficient resultant to vanish at mu>0, which is impossible. The independently Arb-certified eta=10^6 ordering fixes the strict interior-greater-than-face sign on the whole connected high-eta interval.",
+    "claims": {
+      "global_static_maximum_within_six_amplitude_ansatz_for_eta_gt_1867_over_4": true,
+      "full_64d_global_maximum": false,
+      "navier_stokes_trajectory_or_regularity_statement": false
+    }
+  },
+  "arb_anchor": {
+    "eta": "1000000",
+    "precisions": [
+      256,
+      512
+    ],
+    "strict_interior_dominance": [
+      true,
+      true
+    ]
+  },
+  "claims": {
+    "global_static_maximum_within_six_amplitude_ansatz_for_eta_gt_1867_over_4": true,
+    "full_64d_global_maximum": false,
+    "navier_stokes_trajectory_or_regularity_statement": false
+  },
+  "checker_source": {
+    "script": {
+      "path": "scripts/certify_parameterized_static_global.py",
+      "size_bytes": 2435,
+      "sha256": "a522a809f9aa348a84e29c3dd907588023bbedb4ece6b17adb9d042cc7cad471"
+    },
+    "parameterized_global": {
+      "path": "src/extreme_flows/reduced_static_parameterized_global.py",
+      "size_bytes": 4600,
+      "sha256": "888b01aedd7576aada8a966acaafa9e414fbf6ea0837c328663582c403c32601"
+    },
+    "parameterized_branch": {
+      "path": "src/extreme_flows/reduced_static_parameterized.py",
+      "size_bytes": 4505,
+      "sha256": "3346edb67fcce2d6574ca7f8187a0688a917c0bd2fd53e5d8f761fe3a4eace5a"
+    },
+    "fixed_point_anchor": {
+      "path": "src/extreme_flows/reduced_static_global.py",
+      "size_bytes": 13258,
+      "sha256": "40f59d18c81e9770b9b77659ec2dcd989d75a3767ea5dc54129b2e7bddc7fa22"
+    }
+  }
+}

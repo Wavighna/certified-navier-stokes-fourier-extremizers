@@ -1,0 +1,20 @@
+{
+  "truth_label": "proved_exact_sos_shell112_enstrophy_production_bound",
+  "statement": "For the (1,1,2) shell component A112 of the exact 16-pair stretching cubic, A112^2 <= (4/3) E1^2 E2, hence |A112| <= 2/sqrt(3) E1 sqrt(E2).",
+  "scope": "one shellwise component in the fixed 64-real-coordinate Fourier class",
+  "proof": {
+    "degree_two_monomial_basis_size": 78,
+    "rational_gram_sha256": "e90be0e45ffa325d77bba48394702254778d461fb6ffbe43386f43176675436a",
+    "exact_quartic_monomial_count": 90,
+    "positive_schur_pivot_count": 40,
+    "zero_schur_remainder_dimension": 38,
+    "all_exact_pivots_positive": true,
+    "coefficient_identity_verified": true,
+    "gram_positive_semidefinite_verified": true
+  },
+  "claims": {
+    "shell112_bound_proved": true,
+    "shell112_constant_sharp_proved": false,
+    "full_64d_inviscid_globality_proved": false
+  }
+}

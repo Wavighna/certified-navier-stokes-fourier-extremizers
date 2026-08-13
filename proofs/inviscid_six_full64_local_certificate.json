@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "truth_label": "proof_grade_inviscid_six_branch_full_64d_strict_local_maximum",
+  "problem": {
+    "domain": "[0,2*pi)^3",
+    "dimension": 64,
+    "independent_mode_pairs": 16,
+    "viscosity": "0",
+    "certified_enstrophy": "100",
+    "objective": "A=<omega dot S omega>",
+    "phase_waves": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "phase_polarizations": [
+      0,
+      0,
+      0
+    ],
+    "phase_indices": [
+      26,
+      34,
+      54
+    ],
+    "translation_to_phase_slice": "(pi/2,0,0)",
+    "exact_cubic_tensor_sha256": "78635a28c226d165a1936ea40a0437fb0a575251622ae06fc8467ea890e820b1"
+  },
+  "exact_formula": {
+    "unit_enstrophy_six_amplitudes_a_b_c_d_e_f": "(sqrt(69)/23,-sqrt(690)/552,sqrt(345)/276,sqrt(690)/138,sqrt(69)/276,sqrt(138)/69)",
+    "unit_enstrophy_stretching": "8*sqrt(138)/207",
+    "E_100_lagrange_multiplier": "40*sqrt(138)/69"
+  },
+  "scaling_consequence": "Positive scaling maps every E=100 constrained neighborhood to an E=E0 constrained neighborhood and scales A by a positive factor. Thus the certified E=100 strict local maximum gives the same strict local-maximality statement for every E0>0.",
+  "runs": [
+    {
+      "precision_bits": 256,
+      "krawczyk_verified": true,
+      "existence_verified": true,
+      "uniqueness_verified": true,
+      "selected_attempt": {
+        "radius_power_of_two": -30,
+        "all_components_strictly_interior": true,
+        "failed_component_count": 0,
+        "max_image_to_box_radius_ratio": 8.55578343644334e-06,
+        "preconditioner_nonsingular": true,
+        "weighted_infinity_contraction_strictly_below_one": true,
+        "weighted_infinity_contraction_upper_float": 8.555783337403717e-06,
+        "all_existence_and_uniqueness_hypotheses_verified": true
+      },
+      "weighted_infinity_contraction_upper_ball": "[8.55578333740371669604509279361900091670375677791050167692382507599180e-6 +/- 4.91e-75]",
+      "newton_last_correction_ball": "[1.51510789295018788151862295887537552836130887445310425276981555815741e-75 +/- 5.05e-145]",
+      "refined_residual_abs_upper_ball": "[2.92862328705005309074619748453584217698058653280691297932522776102684e-74 +/- 2.90e-143]",
+      "phase_chart_regular": true,
+      "selected_real_amplitude_balls": [
+        "[-0.67297738 +/- 3.36e-9]",
+        "[-0.67297738 +/- 3.36e-9]",
+        "[-1.70251306 +/- 3.11e-9]"
+      ],
+      "exact_translated_formula_inside_unique_krawczyk_box": true,
+      "formula_failed_component_count": 0,
+      "bordered_inertia": {
+        "verified": true,
+        "positive": 4,
+        "negative": 64,
+        "zero_or_unresolved": 0,
+        "minimum_signed_gershgorin_margin_ball": "[0.172260380749860174805111619790202144322652313789351786555045228004946 +/- 1.65e-70]"
+      }
+    },
+    {
+      "precision_bits": 512,
+      "krawczyk_verified": true,
+      "existence_verified": true,
+      "uniqueness_verified": true,
+      "selected_attempt": {
+        "radius_power_of_two": -30,
+        "all_components_strictly_interior": true,
+        "failed_component_count": 0,
+        "max_image_to_box_radius_ratio": 8.555783450654195e-06,
+        "preconditioner_nonsingular": true,
+        "weighted_infinity_contraction_strictly_below_one": true,
+        "weighted_infinity_contraction_upper_float": 8.555783352037734e-06,
+        "all_existence_and_uniqueness_hypotheses_verified": true
+      },
+      "weighted_infinity_contraction_upper_ball": "[8.5557833520377341738237505137818159735747371484977755425248284963428443365863629866645429531772752233272879881276041490442973579386298396836410472e-6 +/- 4.79e-152]",
+      "newton_last_correction_ball": "[1.3012708247712546400766549983607552695583342687713301246665609247494346364607039869335474325685455667099730454068696745473132188574218208381914306e-152 +/- 4.44e-298]",
+      "refined_residual_abs_upper_ball": "[2.7247497833962554414740927904500667685394717384134796403560653209377648371729826900373602823680635498095049369362318405038617079443368763255708826e-151 +/- 4.44e-297]",
+      "phase_chart_regular": true,
+      "selected_real_amplitude_balls": [
+        "[-0.67297738 +/- 3.36e-9]",
+        "[-0.67297738 +/- 3.36e-9]",
+        "[-1.70251306 +/- 3.11e-9]"
+      ],
+      "exact_translated_formula_inside_unique_krawczyk_box": true,
+      "formula_failed_component_count": 0,
+      "bordered_inertia": {
+        "verified": true,
+        "positive": 4,
+        "negative": 64,
+        "zero_or_unresolved": 0,
+        "minimum_signed_gershgorin_margin_ball": "[0.17226038074986056338317023859499129259373614557646116155504522800494583582683822566171643488703667797471869683356124757749965621408753858739332658 +/- 4.61e-147]"
+      }
+    }
+  ],
+  "checker_source": {
+    "module": {
+      "path": "src/extreme_flows/certify.py",
+      "size_bytes": 62613,
+      "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+    },
+    "script": {
+      "path": "scripts/certify_inviscid_six_local.py",
+      "size_bytes": 9616,
+      "sha256": "b6a7454004c328f99d43aaaf47d0bed3d7635c8f90fc5cfadb3fe9b52504d300"
+    }
+  },
+  "additional_sources": {
+    "six_amplitude_formula": {
+      "path": "src/extreme_flows/reduced_static.py",
+      "size_bytes": 3797,
+      "sha256": "6beef16df85466b11090571a4ed60cc3500c36a5c5bcaad47b60519b4c01d701"
+    },
+    "translation_action": {
+      "path": "src/extreme_flows/static_symmetry.py",
+      "size_bytes": 16437,
+      "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+    }
+  },
+  "dependency": {
+    "package": "python-flint",
+    "version": "0.9.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "distribution_metadata": {
+      "path": "python_flint-0.9.0.dist-info/METADATA",
+      "size_bytes": 24779,
+      "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+    },
+    "distribution_record": {
+      "path": "python_flint-0.9.0.dist-info/RECORD",
+      "size_bytes": 15425,
+      "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+    },
+    "primary_extension_binary": {
+      "path": "flint/pyflint.pyd",
+      "size_bytes": 23040,
+      "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+    },
+    "compiled_binary_count": 39,
+    "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+  },
+  "claims": {
+    "exact_translated_formula_is_inside_unique_kkt_box": true,
+    "strict_local_maximum_modulo_translations_at_E_100": true,
+    "strict_local_maximum_modulo_translations_for_every_positive_E": true,
+    "full_64d_inviscid_global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "truth_label": "proved_exact_sos_shell123_enstrophy_production_bound",
+  "statement": "For the (1,2,3) shell component A123, A123^2 <= 16 E1 E2 E3.",
+  "scope": "one shellwise component in the fixed 64-real-coordinate Fourier class",
+  "proof": {
+    "bilinear_monomial_basis_size": 288,
+    "rational_gram_sha256": "027fed07720ab7b6191c8a261470de65e52003eec8e231275c901793ba1f7c39",
+    "exact_quartic_monomial_count": 1512,
+    "positive_schur_pivot_count": 288,
+    "zero_schur_remainder_dimension": 0,
+    "all_exact_pivots_positive": true,
+    "coefficient_identity_verified": true,
+    "gram_positive_semidefinite_verified": true
+  },
+  "claims": {
+    "shell123_bound_proved": true,
+    "shell123_constant_sharp_proved": false,
+    "full_64d_inviscid_globality_proved": false
+  }
+}

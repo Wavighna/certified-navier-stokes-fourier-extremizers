@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_strict_local_static_maximum_high_branch_modulo_translations",
+  "candidate_sha256": "d57ae2c7100252cf177893bea83b2e67508c811a928bbe0e298b9c681d1d6e3e",
+  "parameter_point": {
+    "viscosity": "1/10",
+    "enstrophy": "100",
+    "eta": "10000"
+  },
+  "statement": "A unique KKT root in the stated box is a strict local maximum, modulo translations, in the 64-real-control low-mode class. This is not a global claim.",
+  "arb": {
+    "dependency": {
+      "package": "python-flint",
+      "version": "0.9.0",
+      "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "distribution_metadata": {
+        "path": "python_flint-0.9.0.dist-info/METADATA",
+        "size_bytes": 24779,
+        "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+      },
+      "distribution_record": {
+        "path": "python_flint-0.9.0.dist-info/RECORD",
+        "size_bytes": 15425,
+        "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+      },
+      "primary_extension_binary": {
+        "path": "flint/pyflint.pyd",
+        "size_bytes": 23040,
+        "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+      },
+      "compiled_binary_count": 39,
+      "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+    },
+    "runs": [
+      {
+        "precision_bits": 256,
+        "krawczyk_verified": true,
+        "existence_verified": true,
+        "uniqueness_verified": true,
+        "selected_attempt": {
+          "radius_power_of_two": -30,
+          "all_components_strictly_interior": true,
+          "failed_component_count": 0,
+          "max_image_to_box_radius_ratio": 1.2765038708932662e-06,
+          "preconditioner_nonsingular": true,
+          "weighted_infinity_contraction_strictly_below_one": true,
+          "weighted_infinity_contraction_upper_float": 1.2765038467846496e-06,
+          "all_existence_and_uniqueness_hypotheses_verified": true
+        },
+        "weighted_infinity_contraction_upper_ball": "[1.27650384678464960849693832790718996074504033306206556325277208676046e-6 +/- 4.09e-77]",
+        "newton_last_correction_ball": "[3.58914568092534498671023265917912374242917425620936555294261560435668e-75 +/- 4.61e-144]",
+        "refined_residual_abs_upper_ball": "[4.54607915375721050887968368144956546241051011111416197699774638189115e-74 +/- 4.29e-143]",
+        "phase_chart_regular": true,
+        "exact_two_amplitude_formula_inside_unique_krawczyk_box": true,
+        "formula_failed_component_count": 0,
+        "selected_real_amplitude_balls": [
+          "[4.73732344 +/- 8.86e-9]",
+          "[4.73732344 +/- 8.86e-9]",
+          "[4.73732344 +/- 8.86e-9]"
+        ],
+        "bordered_inertia": {
+          "verified": true,
+          "positive": 4,
+          "negative": 64,
+          "zero_or_unresolved": 0,
+          "minimum_signed_gershgorin_margin_ball": "[0.943785268353866515819939754633692663026547188921718239210479591458249 +/- 4.22e-70]"
+        }
+      },
+      {
+        "precision_bits": 512,
+        "krawczyk_verified": true,
+        "existence_verified": true,
+        "uniqueness_verified": true,
+        "selected_attempt": {
+          "radius_power_of_two": -30,
+          "all_components_strictly_interior": true,
+          "failed_component_count": 0,
+          "max_image_to_box_radius_ratio": 1.2765038708932662e-06,
+          "preconditioner_nonsingular": true,
+          "weighted_infinity_contraction_strictly_below_one": true,
+          "weighted_infinity_contraction_upper_float": 1.2765038466736273e-06,
+          "all_existence_and_uniqueness_hypotheses_verified": true
+        },
+        "weighted_infinity_contraction_upper_ball": "[1.2765038466736273060344226738648267939359583018120655632527720867604537182292831722101510088701713665012803552648418484910543104800315378605731989e-6 +/- 4.68e-152]",
+        "newton_last_correction_ball": "[3.0297956241199819656564034706601593473577885541953745197920154461450722048822296596354681973818457409350447323205417628707976193219352609890736587e-152 +/- 2.95e-298]",
+        "refined_residual_abs_upper_ball": "[4.2124708677429263633379306406268503934807665151265613232852093598668736014868410543155684754863906589844185557696030271462857676581781486941846472e-151 +/- 3.76e-297]",
+        "phase_chart_regular": true,
+        "exact_two_amplitude_formula_inside_unique_krawczyk_box": true,
+        "formula_failed_component_count": 0,
+        "selected_real_amplitude_balls": [
+          "[4.73732344 +/- 8.86e-9]",
+          "[4.73732344 +/- 8.86e-9]",
+          "[4.73732344 +/- 8.86e-9]"
+        ],
+        "bordered_inertia": {
+          "verified": true,
+          "positive": 4,
+          "negative": 64,
+          "zero_or_unresolved": 0,
+          "minimum_signed_gershgorin_margin_ball": "[0.94378526835386687664242275780956830070683931843831980171047959145824857885563298211815324653523213257830468183848439493787795415349449911856194627 +/- 4.91e-147]"
+        }
+      }
+    ]
+  },
+  "checker_source": {
+    "module": {
+      "path": "src/extreme_flows/certify.py",
+      "size_bytes": 62613,
+      "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+    },
+    "script": {
+      "path": "scripts/certify_high_static_branch.py",
+      "size_bytes": 12801,
+      "sha256": "02300013ae84de4caba0198805dee40b2478887ad1e76d33e4c467e6dc67540d"
+    }
+  },
+  "formula_dependencies": {
+    "exact_formula_embedding": {
+      "path": "src/extreme_flows/reduced_competing.py",
+      "size_bytes": 8126,
+      "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+    },
+    "symbolic_full_kkt_reduction": {
+      "path": "scripts/certify_reduced_competing.py",
+      "size_bytes": 10599,
+      "sha256": "049bb651f1d707ed60151c580378b06ee901cd3ed1b8b8079bab5055147dd116"
+    },
+    "exact_symmetry_reduction": {
+      "path": "src/extreme_flows/static_symmetry.py",
+      "size_bytes": 16437,
+      "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+    }
+  },
+  "claims": {
+    "unique_kkt_root_in_reported_box": true,
+    "strict_local_maximum_modulo_translations": true,
+    "exact_two_amplitude_formula_is_the_certified_full_kkt_root": true,
+    "strictly_beats_six_amplitude_ansatz": true,
+    "global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

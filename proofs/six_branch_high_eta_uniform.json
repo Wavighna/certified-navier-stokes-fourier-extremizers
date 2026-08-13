@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "truth_label": "proved_uniform_high_eta_six_branch_full_space_local_maximum",
+  "statement": "A complete certified cover proves that the exact high-eta six-amplitude branch is a strict local maximum of A-2*nu*P at fixed enstrophy in the complete 64-real-control class, modulo translations, for every eta>1867/4. It is not a global or PDE regularity statement.",
+  "compact_parameterization": {
+    "s_range": "0<=s<=1",
+    "r": "s/10=1/mu",
+    "physical_open_branch": "eta>1867/4 implies 0<s<1 (the cover is a safe superset)",
+    "containment_witness": "At eta=1867/4, F_eta(10)=-344736<0. The high-eta theorem gives one positive root and F_eta(+infinity)>0, so mu>10 on the whole physical branch.",
+    "endpoints": {
+      "s=0": "inviscid six-branch limit",
+      "s=1": "mu=10 auxiliary endpoint; the physical threshold has mu>10"
+    },
+    "phase_chart": {
+      "translation": "(pi/2,0,0)",
+      "waves": [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "polarizations": [
+        0,
+        0,
+        0
+      ],
+      "regularity_note": "selected phase amplitudes remain nonzero on the compact cover"
+    }
+  },
+  "arb": {
+    "dependency": {
+      "package": "python-flint",
+      "version": "0.9.0",
+      "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "distribution_metadata": {
+        "path": "python_flint-0.9.0.dist-info/METADATA",
+        "size_bytes": 24779,
+        "sha256": "5916181439cbc4d71a2e033aa50f8809cff66a641879da630023500eaef34901"
+      },
+      "distribution_record": {
+        "path": "python_flint-0.9.0.dist-info/RECORD",
+        "size_bytes": 15425,
+        "sha256": "f76f2892e77b45aa32bf20e3f45ecfa08cd099cb5f1df628b43825ec3ad394d7"
+      },
+      "primary_extension_binary": {
+        "path": "flint/pyflint.pyd",
+        "size_bytes": 23040,
+        "sha256": "f1427349d712cb17a6aa1cd19dcce469417462fa66bd7edd6d049b5d11138a55"
+      },
+      "compiled_binary_count": 39,
+      "compiled_binary_manifest_sha256": "009f9d0cc525f3bac878aa76d7b543f51b5256f6999362eb59e0cc469684311c"
+    },
+    "runs": [
+      {
+        "precision_bits": 256,
+        "interval_count": 2048,
+        "all_intervals_certified": true,
+        "method": "midpoint_inertia_plus_frobenius_neumann_continuation",
+        "failures": [],
+        "minimum_signed_gershgorin_margin": "[0.1594818435999969577833872942583687589977343653760967925177159132998579646036 +/- 2.49e-77]"
+      },
+      {
+        "precision_bits": 512,
+        "interval_count": 2048,
+        "all_intervals_certified": true,
+        "method": "midpoint_inertia_plus_frobenius_neumann_continuation",
+        "failures": [],
+        "minimum_signed_gershgorin_margin": "[0.159481843599996957783387294258368758997734365376096792517715913299857964628786267277768494058822754552000807687326848108584295677544236273118914280173445 +/- 4.77e-154]"
+      }
+    ]
+  },
+  "checker_source": {
+    "path": "scripts/certify_six_high_eta_uniform.py",
+    "size_bytes": 14643,
+    "sha256": "946b7ed43328f2e05a8d4da9c277e453498bbc043ce5d5dcbd34e5adad9dd836"
+  },
+  "polynomial_source": {
+    "path": "src/extreme_flows/certify.py",
+    "size_bytes": 62613,
+    "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+  },
+  "formula_source": {
+    "path": "src/extreme_flows/reduced_static_parameterized.py",
+    "size_bytes": 4505,
+    "sha256": "3346edb67fcce2d6574ca7f8187a0688a917c0bd2fd53e5d8f761fe3a4eace5a"
+  },
+  "claims": {
+    "strict_full_space_local_maximum_modulo_translations_for_eta_gt_1867_over_4": true,
+    "full_64d_global_maximum": false,
+    "navier_stokes_regularity_or_blowup_statement": false
+  }
+}

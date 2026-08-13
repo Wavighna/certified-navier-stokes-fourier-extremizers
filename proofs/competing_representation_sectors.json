@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "truth_label": "exact_isotypic_dimensions_of_competing_A4_times_C2_control_action",
+  "statement": "The exact 64-real-control action decomposes into rational ranks (2,6,24) in each central C2 parity sector. This is a symmetry block-structure certificate, not a uniform Hessian-sign theorem.",
+  "decomposition": {
+    "sector_dimensions": {
+      "trivial_even": 2,
+      "two_dimensional_even": 6,
+      "three_dimensional_even": 24,
+      "trivial_odd": 2,
+      "two_dimensional_odd": 6,
+      "three_dimensional_odd": 24
+    },
+    "sum": 64,
+    "exact_isotypic_decomposition_verified": true
+  },
+  "checker_source": {
+    "path": "scripts/certify_competing_representation.py",
+    "size_bytes": 1992,
+    "sha256": "f81fbd499a77b67ac3361469d978f1db5d61e576630f333b13ca51681f53266e"
+  },
+  "group_implementation": {
+    "path": "src/extreme_flows/static_symmetry.py",
+    "size_bytes": 16437,
+    "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+  },
+  "claims": {
+    "control_representation_isotypic_dimensions_certified": true,
+    "parameter_uniform_full_space_local_maximum": false,
+    "full_space_global_maximum": false
+  }
+}

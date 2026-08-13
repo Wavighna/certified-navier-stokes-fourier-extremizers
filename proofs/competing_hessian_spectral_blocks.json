@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "truth_label": "exact_symbolic_competing_branch_generalized_hessian_block_factorization",
+  "statement": "Exact symbolic characteristic polynomials of the generalized 64-control Hessian in the A4 x C2 isotypic sectors along the competing branch. This algebraic factorization is not, by itself, a proof of all-parameter inertia signs or full-space globality.",
+  "sympy_version": "1.14.0",
+  "derivation": {
+    "parameterization": {
+      "enstrophy": "1",
+      "a_squared": "(3-s^2)/9",
+      "b": "s/12",
+      "viscosity": "(1-s^2)/(2s)",
+      "multiplier": "5s/3-1/s",
+      "range": "0<s<1"
+    },
+    "operator": "D_E^(-1) [ Hessian(R) - lambda Hessian(E) ]",
+    "isotypic_sector_dimensions": {
+      "trivial_even": 2,
+      "two_dimensional_even": 6,
+      "three_dimensional_even": 24,
+      "trivial_odd": 2,
+      "two_dimensional_odd": 6,
+      "three_dimensional_odd": 24
+    },
+    "constraint_geometry": {
+      "sector_enstrophy_orthogonality": {
+        "trivial_even": {
+          "dimension": 2,
+          "enstrophy_orthogonal_to_primary": false,
+          "enstrophy_orthogonal_to_secondary": false
+        },
+        "two_dimensional_even": {
+          "dimension": 6,
+          "enstrophy_orthogonal_to_primary": true,
+          "enstrophy_orthogonal_to_secondary": true
+        },
+        "three_dimensional_even": {
+          "dimension": 24,
+          "enstrophy_orthogonal_to_primary": true,
+          "enstrophy_orthogonal_to_secondary": true
+        },
+        "trivial_odd": {
+          "dimension": 2,
+          "enstrophy_orthogonal_to_primary": true,
+          "enstrophy_orthogonal_to_secondary": true
+        },
+        "two_dimensional_odd": {
+          "dimension": 6,
+          "enstrophy_orthogonal_to_primary": true,
+          "enstrophy_orthogonal_to_secondary": true
+        },
+        "three_dimensional_odd": {
+          "dimension": 24,
+          "enstrophy_orthogonal_to_primary": true,
+          "enstrophy_orthogonal_to_secondary": true
+        }
+      },
+      "nontrivial_sectors_are_enstrophy_tangent": true,
+      "translation_membership": [
+        {
+          "branch_basis_vector": "primary",
+          "axis": 0,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        },
+        {
+          "branch_basis_vector": "primary",
+          "axis": 1,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        },
+        {
+          "branch_basis_vector": "primary",
+          "axis": 2,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        },
+        {
+          "branch_basis_vector": "secondary",
+          "axis": 0,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        },
+        {
+          "branch_basis_vector": "secondary",
+          "axis": 1,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        },
+        {
+          "branch_basis_vector": "secondary",
+          "axis": 2,
+          "nonzero": true,
+          "lies_in_odd_three_dimensional_sector": true
+        }
+      ],
+      "all_translation_basis_tangents_in_odd_three_dimensional_sector": true,
+      "branch_translation_gram_determinant": "8*(3+s^2)^3/729",
+      "branch_translation_orbit_dimension": 3
+    },
+    "blocks": {
+      "trivial_even": {
+        "sector_dimension": 2,
+        "characteristic_polynomial": "(4*s**3 - 3*s**2*t + 9*s*t**2 - 12*s + 9*t)/(9*s)"
+      },
+      "two_dimensional_even": {
+        "sector_dimension": 6,
+        "characteristic_polynomial": "(10*s**5 - 30*s**4*t - 18*s**3*t**2 - 42*s**3 + 27*s**2*t**3 + 9*s**2*t + 81*s*t**2 + 36*s + 54*t)**2/(729*s**4)"
+      },
+      "three_dimensional_even": {
+        "sector_dimension": 24,
+        "characteristic_polynomial": "-(224492*s**15 - 2062086*s**14*t + 6505542*s**13*t**2 - 3276576*s**13 - 6466041*s**12*t**3 + 23600610*s**12*t - 6461451*s**11*t**4 - 51841188*s**11*t**2 + 19721448*s**11 + 18921924*s**10*t**5 + 11917449*s**10*t**3 - 105851340*s**10*t - 15422724*s**9*t**6 + 93393648*s**9*t**4 + 137035476*s**9*t**2 - 63306252*s**9 + 5432508*s**8*t**7 - 120713652*s**8*t**5 + 110733156*s**8*t**3 + 234159336*s**8*t - 708588*s**7*t**8 + 56582064*s**7*t**6 - 347502636*s**7*t**4 - 96838416*s**7*t**2 + 117019080*s**7 - 9211644*s**6*t**7 + 234673848*s**6*t**5 - 428684076*s**6*t**3 - 257646096*s**6*t - 49601160*s**5*t**6 + 492022512*s**5*t**4 - 151200432*s**5*t**2 - 124868952*s**5 - 143134776*s**4*t**5 + 539655372*s**4*t**3 + 106760592*s**4*t - 238794156*s**3*t**4 + 274617216*s**3*t**2 + 71488656*s**3 - 230291100*s**2*t**3 + 26453952*s**2*t - 119042784*s*t**2 - 17006112*s - 25509168*t)**3/(355779876259553472*s**21)"
+      },
+      "trivial_odd": {
+        "sector_dimension": 2,
+        "characteristic_polynomial": "-(4*s + 3*t)*(s**2 - 3*s*t - 3)/(9*s)"
+      },
+      "two_dimensional_odd": {
+        "sector_dimension": 6,
+        "characteristic_polynomial": "(17*s**5 - 12*s**4*t - 108*s**3*t**2 - 69*s**3 + 81*s**2*t**3 - 99*s**2*t + 243*s*t**2 + 54*s + 162*t)**2/(6561*s**4)"
+      },
+      "three_dimensional_odd": {
+        "sector_dimension": 24,
+        "characteristic_polynomial": "t**3*(7*s**2 - 3*s*t - 9)**3*(3916*s**12 - 17538*s**11*t - 7605*s**10*t**2 - 28866*s**10 + 125064*s**9*t**3 + 17424*s**9*t - 188325*s**8*t**4 + 453924*s**8*t**2 + 35469*s**8 + 104976*s**7*t**5 - 1067256*s**7*t**3 + 519750*s**7*t - 19683*s**6*t**6 + 812106*s**6*t**4 - 2178090*s**6*t**2 + 187866*s**6 - 196830*s**5*t**5 + 2417364*s**5*t**3 - 1909332*s**5*t - 787320*s**4*t**4 + 3465666*s**4*t**2 - 610173*s**4 - 1614006*s**3*t**3 + 2402784*s**3*t - 1791153*s**2*t**2 + 647352*s**2 - 1023516*s*t - 236196)**3/(205891132094649*s**21)"
+      }
+    }
+  },
+  "checker_source": {
+    "path": "scripts/derive_competing_hessian_blocks.py",
+    "size_bytes": 11987,
+    "sha256": "69fc6bddd8e2a75db0241972046d355a3807c697ca763f11a41e8f278fdb1ad8"
+  },
+  "polynomial_source": {
+    "path": "src/extreme_flows/certify.py",
+    "size_bytes": 62613,
+    "sha256": "68c5677f558226c2a3d6f8efe4516b3dd1c5a63ab3fcb0206bae1bfa55825aab"
+  },
+  "symmetry_source": {
+    "path": "src/extreme_flows/static_symmetry.py",
+    "size_bytes": 16437,
+    "sha256": "c033c8c0939fe4217140891e9ae5e9f3c816a2e59e3fdb5cbe7e5aa6bdc80e80"
+  },
+  "formula_source": {
+    "path": "src/extreme_flows/reduced_competing.py",
+    "size_bytes": 8126,
+    "sha256": "733761839fe03efc26beef0b727f50b03836d468ae4be392effd65d8cf56d2e5"
+  },
+  "claims": {
+    "exact_generalized_hessian_sector_factorization": true,
+    "all_parameter_inertia_signs_proved_by_this_artifact": false,
+    "full_64d_global_maximum": false
+  }
+}
