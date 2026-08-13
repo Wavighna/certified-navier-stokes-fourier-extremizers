@@ -1,28 +1,33 @@
 # Certified Navier–Stokes Fourier Extremizers
 
-Author: Avighna Wuthoo
+**Avighna Wuthoo**  
+Computer-assisted finite-dimensional variational results for periodic three-dimensional Navier–Stokes flow (2026).
 
-This public archive accompanies a computer-assisted study of finite-dimensional variational problems for periodic three-dimensional Navier–Stokes flow.
+## Start here
 
-## Downloads
+1. Read the **[research paper](Wuthoo_2026_Certified_Navier_Stokes_Fourier_Extremizers.pdf)** for the statements, proofs, methods, and scope.
+2. Download the **[reproducibility archive](Wuthoo_2026_Navier_Stokes_Reproducibility_Archive.zip)** to inspect the source code, exact/interval certificate inputs, proof logs, tests, and numerical data.
+3. Use the **[release manifest](Wuthoo_2026_Release_Manifest.json)** and **[verification summary](Wuthoo_2026_Verification_Summary.json)** to check the archived release and reported verification status.
 
-- Final research paper: Avighna_Wuthoo_Research_Paper_Final.pdf
-- Complete reproducibility release: paper_a_release_materials.zip — manuscript sources, exact/interval proof certificates, code, tests, raw research data, notes, and manifests.
-- Professor-review package: Avighna_Wuthoo_Professor_Review_Package.zip
-- Verification manifest: paper_a_release_manifest.json
+## Included material
 
-## What is proved
+| File | Purpose |
+| --- | --- |
+| Wuthoo_2026_Certified_Navier_Stokes_Fourier_Extremizers.pdf | Final research paper. |
+| Wuthoo_2026_Navier_Stokes_Reproducibility_Archive.zip | Complete reviewer/reproducibility package: manuscript sources, proof certificates, code, tests, raw data, notes, and dependency hashes. |
+| Wuthoo_2026_Release_Manifest.json | Release inventory and integrity information. |
+| Wuthoo_2026_Verification_Summary.json | Machine-readable summary of the verification record. |
 
-The release contains rigorous finite-dimensional, computer-assisted certificates for:
+## Scope of the results
 
-1. An exact-onset strict enstrophy-production bottleneck for a specified periodic 3D Navier–Stokes trajectory.
-2. A strict local maximizer of the initial enstrophy-production rate within the fixed 64-real-dimensional low-Fourier-mode class, modulo translations.
+This project gives rigorous, computer-assisted **finite-dimensional** certificates for specified periodic 3D Navier–Stokes data and a fixed 64-real-dimensional low-Fourier-mode class. It also reports resolution-aware finite-horizon numerical depletion searches.
 
-It also includes resolution-aware numerical depletion searches and Betchov–spectral diagnostics. These are finite-horizon and finite-dimensional results; they do not constitute a proof of global regularity or singularity for 3D Navier–Stokes.
+It does **not** prove global regularity, finite-time singularity, or any resolution of the 3D Navier–Stokes Millennium Problem.
 
-## Reproducibility
+## What is certified
 
-The complete archive includes proof logs, dependency hashes, rational/ball inputs, validation trajectories, test suites, and conservative truth labels. Start with RELEASE_MATERIALS.md inside paper_a_release_materials.zip.
+- A strict one-sided initial enstrophy-production bottleneck for an explicit trajectory.
+- A strict local maximizer of the initial enstrophy-production rate in the stated low-mode class, modulo translations.
 
 ## Citation
 
